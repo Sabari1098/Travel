@@ -4,8 +4,8 @@ from . models import place
 from . models import meet
 
 def demo(request):
-     obj=place.objects.all()
-     obj1=meet.objects.all()
+     obj = place.objects.all()
+     obj1 = meet.objects.all()
      return render(request,'index.html',{'result':obj,'result1':obj1})
 # def operator(request):
 #      x=int(request.GET['num1'])
